@@ -1,0 +1,138 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.header.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.logo {
+  margin-right: 45px;
+}
+
+.menu__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.button {
+  min-width: 220px;
+  background: #cda861;
+  -webkit-box-shadow: 0px 5px 10px rgba(205, 168, 97, 0.29);
+          box-shadow: 0px 5px 10px rgba(205, 168, 97, 0.29);
+  border-radius: 50px;
+  padding: 16px 23px;
+}
+
+@media screen and (min-width: 1680px) {
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product .item + .item {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .product .item + .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    margin-left: 55px;
+  }
+}
+
+.buy {
+  min-width: 200px;
+  background: #cda861;
+  -webkit-box-shadow: 0px 5px 10px rgba(205, 168, 97, 0.29);
+          box-shadow: 0px 5px 10px rgba(205, 168, 97, 0.29);
+  border-radius: 50px;
+  padding: 14px 45px;
+}
+/*# sourceMappingURL=main.css.map */
