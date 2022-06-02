@@ -8,17 +8,34 @@
     
 }
 
-.header-greeting {
-    display: flex;
+.header-greeting {    
     justify-content: center;
+    @media screen and (min-width:1680px) {
+            display: flex;
+    
+            &__item+&__item {
+                margin-left: 60px;
+            }
+    
+        }
     
 }
 
 .greeting-block {}
 
 .greeting-block-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    &__item{
+        font-size: 12px;
+    }
+    &__item + &__item {
+        margin-left: 20px;
+    }
+
     @media screen and (min-width:1680px) {
-        display: flex;
+        display: flex;        
         &__item + &__item {
             margin-left: 60px;
         }
@@ -41,34 +58,63 @@
 }
 
 .login-block-menu {
-    @media screen and (min-width:1680px) {
-            display: flex;
-            &__item + &__item{
-                margin-left: 60px;
-            }
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    &__item + &__item {
+            margin-left: 20px;
+        }
+
+    @media screen and (min-width:1680px) {            
+           
         }
     
 }
 
 .header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media screen and (min-width:1680px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            
+            
+            
         }
     
 }
 
 .logo {
-    display: block;    
+    display: inline-block;    
     margin-right: 45px;
 }
 
 .logo-image {
-    max-width: 200px;
+    // width: 100px;
+    height: 40px;
+    @media screen and (min-width:1680px) {
+            max-width: 200px;
+        }
+    
+}
+
+.navigation{
+    display: flex;
+
+}
+
+.navigation__burger{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    @media screen and (min-width:1680px) {
+            display: none;
+        }
+
 }
 
 .navigation-menu {
+    display: none;
     &__item {
         &:not(:last-child) {
             margin-bottom: 50px;
