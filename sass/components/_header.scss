@@ -90,46 +90,7 @@
     
 }
 
-.navigation{
-    display: flex;
 
-}
-
-.menu-open-btn{
-    display: inline-block;
-    
-
-    @media screen and (min-width:1680px) {
-            display: none;
-        }
-
-}
-
-.navigation-menu {
-    display: none;
-    &__item {
-        &:not(:last-child) {
-            margin-bottom: 50px;
-        }
-    }
-
-    @media screen and (min-width:768px) {
-        &__item {
-            &:not(:last-child) {
-                margin-bottom: 0;            
-            }
-        }
-    }
-    
-    @media screen and (min-width:1680px) {
-        display: flex;
-        &__item {
-            &:not(:last-child) {
-                    margin-right: 50px;
-                } 
-        }  
-    }  
-}
 
 
 

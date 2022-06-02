@@ -30,7 +30,7 @@
                             <button class="button button--currency">Currency: USD</button>
                         </li>
                         <li class="login-block-menu__item">
-                            <button class="button button--login">My Account</button>
+                            <button type="button" class="button button--login">My Account</button>
                         </li>
                     </ul>
                 </div> 
@@ -38,12 +38,17 @@
             <div class="header-menu">
                 <a href="./index.html" class="logo"><img class="logo-image" src="./img/logo.png" alt="logo" ></a>
                 <nav class="navigation">
-                    <button type="button" class="menu-open-btn"><svg class="open-icon" width="40" height="40">
+                    <button class="menu-open-btn" type="button" menu-open-btn><svg class="open-icon" width="40" height="40">
                             <use href="./img/svg/symbol-defs.svg#icon-menu"></use>
-                        </svg></button>
-                    
-                    <div class="mob-navigation  is-hidden">
-                        <ul class="mob-navigation-menu">
+                        </svg>
+                    </button>                    
+                    <div class="mob-navigation is-hidden">
+                        <button type="button" class="menu-close-btn">
+                            <svg class="icon-close-black" width="30" height="30">
+                                <use href="./img/svg/symbol-defs.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
+                        <ul class="mob-navigation-menu__container">
                             <li class="mob-navigation-menu__item">Home<a href=""></a></li>
                             <li class="mob-navigation-menu__item">Shop<a href=""></a></li>
                             <li class="mob-navigation-menu__item">Blog<a href=""></a></li>
@@ -62,6 +67,10 @@
                         <li class="navigation-menu__item">Pages<a href=""></a></li>
                         <li class="navigation-menu__item">Contact Us<a href=""></a></li>
                     </ul>
+                    <ul class="navigation-interactive">
+                        <li class="navigation-interactive__item"></li>
+                        <li class="navigation-interactive__item"></li>
+                    </ul>
                 </nav>                
             </div>            
         </div>    
@@ -72,7 +81,7 @@
                 <h1 class="hero__title">Simple Furniture with high-end quality</h1>
                 <p class="hero__text">Lorem Ipsum is simply dummy text of the printing
                     and typesetting industry.</p>
-                <button class="button">Shop Now</button>
+                <button type="button" class="button">Shop Now</button>
             </div> 
         </section>
 
@@ -83,7 +92,7 @@
                 <p class="hero__text">Lorem Ipsum is simply dummy text of the printing
                 anLorem Ipsum is simply dummy text of the printing
                 and typesetting industry.d typesetting industry.</p>
-                <button class="button">Shop Now</button>
+                <button type="button" class="button">Shop Now</button>
             </div> 
         </section>
 
@@ -98,7 +107,7 @@
                             $159
                         </p>
                         <p>Lorem Iipsum is simple and dumy text.</p>
-                        <button class="button buy">Add to Card</button>
+                        <button type="button" class="button buy">Add to Card</button>
                     </li>
                     <li class="item">
                         <img src="" alt="">
@@ -106,7 +115,7 @@
                             $199
                         </p>
                         <p>Lorem Iipsum is simple and dumy text.</p>
-                        <button class="button buy">Add to Card</button>
+                        <button type="button" class="button buy">Add to Card</button>
                     </li>
                     <li class="item">
                         <img src="" alt="">
@@ -114,7 +123,7 @@
                             $359
                         </p>
                         <p>Lorem Iipsum is simple and dumy text.</p>
-                        <button class="button buy">Add to Card</button>
+                        <button type="button" class="button buy">Add to Card</button>
                     </li>
                     <li class="item">
                         <img src="" alt="">
@@ -122,7 +131,7 @@
                             $99
                         </p>
                         <p>Lorem Iipsum is simple and dumy text.</p>
-                        <button class="button buy">Add to Card</button>
+                        <button type="button" class="button buy">Add to Card</button>
                     </li>
                     <li class="item">
                         <img src="" alt="">
@@ -130,7 +139,7 @@
                             $299
                         </p>
                         <p>Lorem Iipsum is simple and dumy text.</p>
-                        <button class="button buy">Add to Card</button>
+                        <button type="button" class="button buy">Add to Card</button>
                     </li>
                 </ul>
             </div>
@@ -138,18 +147,12 @@
         </section>
 
         <section class="special-section section">
-            <div class="container">
-                <!-- <img src="./img/special-proposition.png" alt=""> -->
+            <div class="container">               
                 <h2>Special deals for this week</h2>
             </div>
-           
         </section>
-
-
     </main>
-
     <footer>
-
     </footer>
 
     <script src="./js/mobile-menu.js"></script>

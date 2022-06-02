@@ -1,8 +1,9 @@
 .hero-section{
     @media screen and (min-width:1680px) {
         background-image: url(../../img/bg/bg-section-hero.png);
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
         height: 1080px;
 
     }
