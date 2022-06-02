@@ -231,6 +231,24 @@ img {
 }
 
 @media screen and (min-width: 1680px) {
+  .hero-section {
+    background-image: url(../../img/bg/bg-section-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1080px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .about-section {
+    background-image: url(../../img/bg/bg-section-about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 760px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
   .product {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -252,6 +270,15 @@ img {
     display: flex;
     text-align: center;
     margin-left: 55px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .special-section {
+    background-image: url(../../img/bg/special-proposition.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1080px;
   }
 }
 /*# sourceMappingURL=main.css.map */
