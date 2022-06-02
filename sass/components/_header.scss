@@ -21,8 +21,6 @@
     
 }
 
-.greeting-block {}
-
 .greeting-block-menu {
     display: flex;
     justify-content: center;
@@ -51,10 +49,6 @@
             margin-right: 60px ;
         }        
     }  
-}
-
-.login-block {
-    
 }
 
 .login-block-menu {
@@ -102,10 +96,9 @@
 
 }
 
-.navigation__burger{
+.menu-open-btn{
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    
 
     @media screen and (min-width:1680px) {
             display: none;
