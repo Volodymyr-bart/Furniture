@@ -1,5 +1,6 @@
 .navigation {
     display: flex;
+    align-items: center;
 }
 
 .navigation-menu {
@@ -28,4 +29,14 @@
             }
         }
     }
+}
+
+.navigation-interactive{
+    display: flex;
+    margin-left: auto;
+    margin-left: 60px;
+    &__item+&__item {
+            margin-left: 60px;
+        }
+
 }

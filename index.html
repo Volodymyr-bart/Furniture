@@ -17,14 +17,12 @@
 <body>
     <header>
         <div class="header-container container">
-            <div class="header-greeting">
-                <div class="greeting-block">
+            <div class="header-container--top">
+                <div class="header-greeting">
                     <ul class="greeting-block-menu">
                         <li class="greeting-block-menu__item greeting-block-menu__item--phone">+91998 654 6583</li>
                         <li class="greeting-block-menu__item greeting-block-menu__item--welcome">Welcome you Benco store!</li>
-                    </ul>                    
-                </div>
-                <div class="login-block">
+                    </ul>
                     <ul class="login-block-menu">
                         <li class="login-block-menu__item">
                             <button class="button button--currency">Currency: USD</button>
@@ -33,57 +31,66 @@
                             <button type="button" class="button button--login">My Account</button>
                         </li>
                     </ul>
-                </div> 
-            </div>
-            <div class="header-menu">
-                <a href="./index.html" class="logo"><img class="logo-image" src="./img/logo.png" alt="logo" ></a>
-                <nav class="navigation">
-                    <button class="menu-open-btn" type="button" menu-open-btn><svg class="open-icon" width="40" height="40">
-                            <use href="./img/svg/symbol-defs.svg#icon-menu"></use>
-                        </svg>
-                    </button>                    
-                    <div class="mob-navigation is-hidden">
-                        <button type="button" class="menu-close-btn">
-                            <svg class="icon-close-black" width="30" height="30">
-                                <use href="./img/svg/symbol-defs.svg#icon-close-black"></use>
+                    
+                </div>
+                <div class="header-menu">
+                    <a href="./index.html" class="logo"><img class="logo-image" src="./img/logo.png" alt="logo"></a>
+                    <nav class="navigation">
+                        <button class="menu-open-btn" type="button" menu-open-btn><svg class="open-icon" width="40" height="40">
+                                <use href="./img/svg/symbol-defs.svg#icon-menu"></use>
                             </svg>
                         </button>
-                        <ul class="mob-navigation-menu__container">
-                            <li class="mob-navigation-menu__item">Home<a href=""></a></li>
-                            <li class="mob-navigation-menu__item">Shop<a href=""></a></li>
-                            <li class="mob-navigation-menu__item">Blog<a href=""></a></li>
-                            <li class="mob-navigation-menu__item">About Us<a href=""></a></li>
-                            <li class="mob-navigation-menu__item">Product<a href=""></a></li>
-                            <li class="mob-navigation-menu__item">Pages<a href=""></a></li>
-                            <li class="mob-navigation-menu__item">Contact Us<a href=""></a></li>
+                        <div class="mob-navigation is-hidden">
+                            <button type="button" class="menu-close-btn">
+                                <svg class="icon-close-black" width="30" height="30">
+                                    <use href="./img/svg/symbol-defs.svg#icon-close-black"></use>
+                                </svg>
+                            </button>
+                            <ul class="mob-navigation-menu__container">
+                                <li class="mob-navigation-menu__item">Home<a href=""></a></li>
+                                <li class="mob-navigation-menu__item">Shop<a href=""></a></li>
+                                <li class="mob-navigation-menu__item">Blog<a href=""></a></li>
+                                <li class="mob-navigation-menu__item">About Us<a href=""></a></li>
+                                <li class="mob-navigation-menu__item">Product<a href=""></a></li>
+                                <li class="mob-navigation-menu__item">Pages<a href=""></a></li>
+                                <li class="mob-navigation-menu__item">Contact Us<a href=""></a></li>
+                            </ul>
+                        </div>
+                        <ul class="navigation-menu">
+                            <li class="navigation-menu__item">Home<a href=""></a></li>
+                            <li class="navigation-menu__item">Shop<a href=""></a></li>
+                            <li class="navigation-menu__item">Blog<a href=""></a></li>
+                            <li class="navigation-menu__item">About Us<a href=""></a></li>
+                            <li class="navigation-menu__item">Product<a href=""></a></li>
+                            <li class="navigation-menu__item">Pages<a href=""></a></li>
+                            <li class="navigation-menu__item">Contact Us<a href=""></a></li>
                         </ul>
+                        <ul class="navigation-interactive">
+                            <li class="navigation-interactive__item"><svg class="open-icon" width="40" height="40">
+                                    <use href="./img/svg/symbol-defs.svg#icon-search"></use>
+                                </svg></li>
+                            <li class="navigation-interactive__item"><svg class="open-icon" width="40" height="40">
+                                    <use href="./img/svg/symbol-defs.svg#icon-shopping-cart"></use>
+                                </svg></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-container--bottom">
+                <section class="">
+                    <div class="hero-section container">
+                        <h1 class="hero-section__title">Simple Furniture with high-end quality</h1>
+                        <p class="hero-section__text">Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry.</p>
+                        <button type="button" class="button hero-section--button">Shop Now</button>
                     </div>
-                    <ul class="navigation-menu">
-                        <li class="navigation-menu__item">Home<a href=""></a></li>
-                        <li class="navigation-menu__item">Shop<a href=""></a></li>
-                        <li class="navigation-menu__item">Blog<a href=""></a></li>
-                        <li class="navigation-menu__item">About Us<a href=""></a></li>
-                        <li class="navigation-menu__item">Product<a href=""></a></li>
-                        <li class="navigation-menu__item">Pages<a href=""></a></li>
-                        <li class="navigation-menu__item">Contact Us<a href=""></a></li>
-                    </ul>
-                    <ul class="navigation-interactive">
-                        <li class="navigation-interactive__item"></li>
-                        <li class="navigation-interactive__item"></li>
-                    </ul>
-                </nav>                
-            </div>            
-        </div>    
+                </section>
+            </div>
+        </div>
+            
     </header>
     <main>
-        <section class="hero-section section">
-            <div class="container">
-                <h1 class="hero__title">Simple Furniture with high-end quality</h1>
-                <p class="hero__text">Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry.</p>
-                <button type="button" class="button">Shop Now</button>
-            </div> 
-        </section>
+        
 
         <section class="about-section section">
             <div class="container">

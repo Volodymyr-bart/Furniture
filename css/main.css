@@ -50,12 +50,20 @@ img {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .container {
+    width: 1680px;
+  }
 }
 
 .section {
@@ -77,13 +85,23 @@ img {
   }
 }
 
+.header-container {
+  padding-top: 20px;
+}
+
 @media screen and (min-width: 1680px) {
   .header-container {
     margin-top: 30px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
+    background-image: url(../../img/bg/bg-section-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .header-container--bottom {
+    margin-top: 190px;
   }
 }
 
@@ -98,6 +116,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header-greeting__item + .header-greeting__item {
     margin-left: 60px;
@@ -151,6 +172,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 
@@ -189,6 +211,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation-menu {
@@ -216,6 +241,18 @@ img {
   }
 }
 
+.navigation-interactive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-left: 60px;
+}
+
+.navigation-interactive__item + .navigation-interactive__item {
+  margin-left: 60px;
+}
+
 .mob-navigation {
   position: fixed;
   top: 0;
@@ -227,13 +264,41 @@ img {
   padding: 48px 15px 48px 40px;
 }
 
+.hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 660px;
+}
+
 @media screen and (min-width: 1680px) {
-  .hero-section {
-    background-image: url(../../img/bg/bg-section-hero.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1080px;
+  .hero-section__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 76px;
+    line-height: 93px;
+    color: #34383D;
+  }
+  .hero-section__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #34383D;
+    opacity: 0.8;
+    margin-top: 30px;
+  }
+  .hero-section--button {
+    margin-top: 60px;
   }
 }
 
